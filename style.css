@@ -1,0 +1,194 @@
+@media all /*pc e telas maiores*/ {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    background-image: linear-gradient(
+      140deg,
+      #000,
+      rgb(0, 0, 40),
+      rgb(1, 1, 62)
+    );
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+
+  }
+
+  /*header*/
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*barra*/
+  .geralBarraLateral {
+    background-color: aliceblue;
+    width: 200px;
+    height: 88vh;
+    margin: 20px 10px 20px 20px;
+    border-radius: 20px;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*barra - encima*/
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.671);
+    padding-bottom: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .logo h1 {
+    font-size: 25px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 1em 0em;
+  }
+
+  .links div:hover {
+    background-color: rgba(151, 151, 151, 0.274);
+    border-radius: 10px;
+  }
+
+  .links div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  /*barra baixo*/
+
+  .geralBarraLateral_baixo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .configuraçoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .configuraçoes:hover {
+    background-color: rgba(151, 151, 151, 0.274);
+    border-radius: 10px;
+  }
+
+  .perfil {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.671);
+  }
+
+  .perfil h1 {
+    font-size: 15px;
+  }
+
+  .perfil p {
+    font-size: 12px;
+  }
+
+  .perfil img {
+    width: 50px;
+  }
+
+  /*botão*/
+
+  .BarraLateral_botoes {
+    color: rgb(15, 15, 15);
+    margin-top: 30px;
+    background-color: white;
+    height: 24px;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+  }
+
+  #fechar {
+    display: block;
+  }
+
+  #abrir {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 968px) and (orientation: landscape) {
+  /*barra - encima*/
+
+  .links {
+    gap: 1em;
+  }
+
+  /*barra*/
+
+  .geralBarraLateral {
+    height: 80vh;
+  }
+
+  /*barra baixo*/
+  .geralBarraLateral_baixo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1078px) and (orientation: landscape) {
+  /*barra - encima*/
+
+  .links {
+    gap: 1em;
+  }
+
+  /*barra*/
+
+  .geralBarraLateral {
+    height: 88vhvh;
+  }
+
+  /*barra baixo*/
+  .geralBarraLateral_baixo {
+    display: flex;
+  }
+}
+
